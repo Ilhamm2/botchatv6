@@ -113,7 +113,7 @@ def handle(update):
 			
 			if 'dice' in update:
 				dice = update["dice"]["emoji"]
-				keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="ɪɴsᴛᴀɢʀᴀᴍ", url="https://www.instagram.com/always_bacot_")]])
+				keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="ɪɴsᴛᴀɢʀᴀᴍ", url="https://www.instagram.com/always_bacot")]])
 				bot.sendDice(queue["occupied"][uid],emoji=dice,reply_markup=keyboard)
 
 		if text == "/start" or text == "/refresh":
@@ -124,11 +124,11 @@ def handle(update):
 				#		with open('is.txt', 'w') as f:
 				#			f.write(user_ids+"\n"+str(uid))
 				#			keyboard1 = ReplyKeyboardRemove()
-				#			#keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="ɪɴsᴛᴀɢʀᴀᴍ", url="https://instagram.com/davialfajr_"),InlineKeyboardButton(text="ᴛɪᴋᴛᴏᴋ", url="https://vm.tiktok.com/ZSJC6FWw2/")]])
+				#			#keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="ɪɴsᴛᴀɢʀᴀᴍ", url="https://www.instagram.com/always_bacot"),InlineKeyboardButton(text="ᴛɪᴋᴛᴏᴋ", url="https://vm.tiktok.com/ZSJC6FWw2/")]])
 				#			bot.sendMessage(uid,"_⚡️ BOT CHAT ANONYMOUS ⚡️\n\nKAMU DAPAT MENEMUKAN TEMAN\nSECARA RANDOM 🦊 TEKAN [ /start ]_", parse_mode="MarkDown", reply_markup=keyboard1, reply_to_message_id=update['message_id'])
 				#	else:
 				#keyboard1 = ReplyKeyboardMarkup(keyboard=[['Search 🔍'],['Pengguna👤','MENU BOT✅']], resize_keyboard=True, one_time_keyboard=True)
-				keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="ɪɴsᴛᴀɢʀᴀᴍ", url="https://www.instagram.com/always_bacot_"),InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀᴛ", url="t.me/SquadAB")]])
+				keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="ɪɴsᴛᴀɢʀᴀᴍ", url="https://www.instagram.com/always_bacot"),InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀᴛ", url="t.me/SquadAB")]])
 				bot.sendMessage(uid, "⚡️ BOt Anonymous_Mblo ⚡️\n\n_🇮🇩 Semoga Dapat pacar baru yaa wkkw\n🇳🇿 I hope you can make a friend or a partner\n\n?> untuk mencari teman obrolan gunakan perintah /search_", parse_mode='MarkDown', disable_web_page_preview=True , reply_markup=keyboard)
 						#bot.sendMessage(uid,"_[❗️] Follow sosial media dan support terus bot ini_",parse_mode="MarkDown", reply_markup=keyboard1)
 
